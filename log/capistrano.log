@@ -1,0 +1,57 @@
+# Logfile created on 2019-07-08 12:09:29 +0530 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 12:09:29 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a8d9abde] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [a8d9abde] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a8d9abde] Finished in 2.998 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [4faf0077] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [4faf0077] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [4faf0077] Finished in 0.785 seconds with exit status 0 (successful).
+  INFO [32f407fe] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [32f407fe] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [32f407fe] 	6a925f610bff1d81a67e68b9c8d690f37815e23a	HEAD
+  INFO [32f407fe] Finished in 2.032 seconds with exit status 0 (successful).
+  INFO [9f0ff2a0] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared /var/www/html/php-upload/releases as root@192.99.54.120
+ DEBUG [9f0ff2a0] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared /var/www/html/php-upload/releases
+  INFO [9f0ff2a0] Finished in 0.722 seconds with exit status 0 (successful).
+  INFO [4360b071] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared/cache /var/www/html/php-upload/shared/public/uploads as root@192.99.54.120
+ DEBUG [4360b071] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared/cache /var/www/html/php-upload/shared/public/uploads
+  INFO [4360b071] Finished in 0.715 seconds with exit status 0 (successful).
+  INFO [84d92291] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared/generated-conf as root@192.99.54.120
+ DEBUG [84d92291] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared/generated-conf
+  INFO [84d92291] Finished in 0.719 seconds with exit status 0 (successful).
+ DEBUG [926f871c] Running [ -f /var/www/html/php-upload/shared/generated-conf/config.php ] as root@192.99.54.120
+ DEBUG [926f871c] Command: [ -f /var/www/html/php-upload/shared/generated-conf/config.php ]
+ DEBUG [926f871c] Finished in 0.715 seconds with exit status 1 (failed).
+ ERROR linked file /var/www/html/php-upload/shared/generated-conf/config.php does not exist on 192.99.54.120
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 12:12:03 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [75420091] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [75420091] Command: /usr/bin/env mkdir -p /tmp
+  INFO [75420091] Finished in 2.473 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [8ca3c264] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [8ca3c264] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [8ca3c264] Finished in 0.742 seconds with exit status 0 (successful).
+  INFO [22406376] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [22406376] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [22406376] 	6a925f610bff1d81a67e68b9c8d690f37815e23a	HEAD
+  INFO [22406376] Finished in 0.993 seconds with exit status 0 (successful).
+  INFO [76e8f468] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared /var/www/html/php-upload/releases as root@192.99.54.120
+ DEBUG [76e8f468] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared /var/www/html/php-upload/releases
+  INFO [76e8f468] Finished in 0.739 seconds with exit status 0 (successful).
+  INFO [36b6418d] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared/cache /var/www/html/php-upload/shared/public/uploads as root@192.99.54.120
+ DEBUG [36b6418d] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared/cache /var/www/html/php-upload/shared/public/uploads
+  INFO [36b6418d] Finished in 0.737 seconds with exit status 0 (successful).
+  INFO [8d96ac14] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared/generated-conf as root@192.99.54.120
+ DEBUG [8d96ac14] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared/generated-conf
+  INFO [8d96ac14] Finished in 0.741 seconds with exit status 0 (successful).
+ DEBUG [40138f19] Running [ -f /var/www/html/php-upload/shared/generated-conf/config.php ] as root@192.99.54.120
+ DEBUG [40138f19] Command: [ -f /var/www/html/php-upload/shared/generated-conf/config.php ]
+ DEBUG [40138f19] Finished in 0.735 seconds with exit status 1 (failed).
+ ERROR linked file /var/www/html/php-upload/shared/generated-conf/config.php does not exist on 192.99.54.120
