@@ -325,3 +325,502 @@
   INFO [c8e9c959] Running /usr/bin/env echo "Branch master (at 172eb82bf71cc0ee43c941683f670e44384c837d) deployed as release 20190708071359 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
  DEBUG [c8e9c959] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 172eb82bf71cc0ee43c941683f670e44384c837d) deployed as release 20190708071359 by yuvi" >> /var/www/html/cap-deploy/revisions.log
   INFO [c8e9c959] Finished in 0.757 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 12:47:39 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [81916df1] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [81916df1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [81916df1] Finished in 2.445 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [2f483bdd] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [2f483bdd] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [2f483bdd] Finished in 0.728 seconds with exit status 0 (successful).
+  INFO [462be3f1] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [462be3f1] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [462be3f1] 	55fdfa339b6e618fd0bed046057c975c2a26ba13	HEAD
+  INFO [462be3f1] Finished in 0.976 seconds with exit status 0 (successful).
+  INFO [ae793feb] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [ae793feb] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+  INFO [ae793feb] Finished in 0.729 seconds with exit status 0 (successful).
+ DEBUG [06016da5] Running [ -f /var/www/html/cap-deploy/current/REVISION ] as root@192.99.54.120
+ DEBUG [06016da5] Command: [ -f /var/www/html/cap-deploy/current/REVISION ]
+ DEBUG [06016da5] Finished in 0.726 seconds with exit status 0 (successful).
+ DEBUG [c7516bef] Running /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null as root@192.99.54.120
+ DEBUG [c7516bef] Command: /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [c7516bef] 	172eb82bf71cc0ee43c941683f670e44384c837d
+ DEBUG [c7516bef] Finished in 0.730 seconds with exit status 0 (successful).
+ DEBUG [24208884] Running [ -f /var/www/html/cap-deploy/repo/HEAD ] as root@192.99.54.120
+ DEBUG [24208884] Command: [ -f /var/www/html/cap-deploy/repo/HEAD ]
+ DEBUG [24208884] Finished in 0.728 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/cap-deploy/repo
+ DEBUG [b0042ca3] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [b0042ca3] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [b0042ca3] Finished in 0.721 seconds with exit status 0 (successful).
+  INFO [bdec8b33] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [bdec8b33] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [bdec8b33] Finished in 0.735 seconds with exit status 0 (successful).
+  INFO [c8ab2626] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [c8ab2626] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c8ab2626] 	Fetching origin
+ DEBUG [c8ab2626] 	From https://github.com/ywaghmare5203/Cap-php
+   172eb82..55fdfa3  master     -> master
+  INFO [c8ab2626] Finished in 1.062 seconds with exit status 0 (successful).
+ DEBUG [ba48b0e5] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [ba48b0e5] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [ba48b0e5] Finished in 0.722 seconds with exit status 0 (successful).
+  INFO [757ef051] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708071747 as root@192.99.54.120
+ DEBUG [757ef051] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708071747 )
+  INFO [757ef051] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [95fdc014] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708071747 as root@192.99.54.120
+ DEBUG [95fdc014] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708071747 )
+  INFO [95fdc014] Finished in 0.737 seconds with exit status 0 (successful).
+ DEBUG [3af030c6] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [3af030c6] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [3af030c6] Finished in 0.730 seconds with exit status 0 (successful).
+ DEBUG [fcdadcba] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [fcdadcba] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [fcdadcba] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [fcdadcba] Finished in 0.737 seconds with exit status 0 (successful).
+ DEBUG [ca498dfb] Running if test ! -d /var/www/html/cap-deploy/releases/20190708071747; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708071747'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [ca498dfb] Command: if test ! -d /var/www/html/cap-deploy/releases/20190708071747; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708071747'" 1>&2; false; fi
+ DEBUG [ca498dfb] Finished in 0.732 seconds with exit status 0 (successful).
+  INFO [0d14b879] Running /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION as root@192.99.54.120
+ DEBUG [0d14b879] Command: cd /var/www/html/cap-deploy/releases/20190708071747 && /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION
+  INFO [0d14b879] Finished in 0.733 seconds with exit status 0 (successful).
+  INFO [a7f77d64] Running /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708071747 /var/www/html/cap-deploy/releases/current as root@192.99.54.120
+ DEBUG [a7f77d64] Command: /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708071747 /var/www/html/cap-deploy/releases/current
+  INFO [a7f77d64] Finished in 0.732 seconds with exit status 0 (successful).
+  INFO [25e1ac27] Running /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy as root@192.99.54.120
+ DEBUG [25e1ac27] Command: /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy
+  INFO [25e1ac27] Finished in 0.731 seconds with exit status 0 (successful).
+ DEBUG [6013f85d] Running /usr/bin/env ls -x /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [6013f85d] Command: /usr/bin/env ls -x /var/www/html/cap-deploy/releases
+ DEBUG [6013f85d] 	20190708065224	20190708071359	20190708071747
+ DEBUG [6013f85d] Finished in 0.731 seconds with exit status 0 (successful).
+ DEBUG [342b89d7] Running if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [342b89d7] Command: if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [342b89d7] Finished in 0.730 seconds with exit status 0 (successful).
+  INFO [e1d5ebb4] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708071747 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
+ DEBUG [e1d5ebb4] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708071747 by yuvi" >> /var/www/html/cap-deploy/revisions.log
+  INFO [e1d5ebb4] Finished in 0.726 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 13:00:40 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [115b4d96] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [115b4d96] Command: /usr/bin/env mkdir -p /tmp
+  INFO [115b4d96] Finished in 2.800 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [1af1360e] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [1af1360e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [1af1360e] Finished in 0.729 seconds with exit status 0 (successful).
+  INFO [df7192c3] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [df7192c3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [df7192c3] 	55fdfa339b6e618fd0bed046057c975c2a26ba13	HEAD
+  INFO [df7192c3] Finished in 1.518 seconds with exit status 0 (successful).
+  INFO [e55958ec] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [e55958ec] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+  INFO [e55958ec] Finished in 0.724 seconds with exit status 0 (successful).
+ DEBUG [5703cdfc] Running [ -f /var/www/html/cap-deploy/current/REVISION ] as root@192.99.54.120
+ DEBUG [5703cdfc] Command: [ -f /var/www/html/cap-deploy/current/REVISION ]
+ DEBUG [5703cdfc] Finished in 0.721 seconds with exit status 0 (successful).
+ DEBUG [b54d7468] Running /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null as root@192.99.54.120
+ DEBUG [b54d7468] Command: /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [b54d7468] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [b54d7468] Finished in 0.726 seconds with exit status 0 (successful).
+ DEBUG [24563cb1] Running [ -f /var/www/html/cap-deploy/repo/HEAD ] as root@192.99.54.120
+ DEBUG [24563cb1] Command: [ -f /var/www/html/cap-deploy/repo/HEAD ]
+ DEBUG [24563cb1] Finished in 0.719 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/cap-deploy/repo
+ DEBUG [c1521d1a] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [c1521d1a] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [c1521d1a] Finished in 0.719 seconds with exit status 0 (successful).
+  INFO [307cb333] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [307cb333] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [307cb333] Finished in 0.729 seconds with exit status 0 (successful).
+  INFO [376868b8] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [376868b8] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [376868b8] 	Fetching origin
+  INFO [376868b8] Finished in 0.990 seconds with exit status 0 (successful).
+ DEBUG [2d2c8475] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [2d2c8475] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [2d2c8475] Finished in 0.721 seconds with exit status 0 (successful).
+  INFO [961ede52] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708073049 as root@192.99.54.120
+ DEBUG [961ede52] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708073049 )
+  INFO [961ede52] Finished in 0.730 seconds with exit status 0 (successful).
+  INFO [4a5f038f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708073049 as root@192.99.54.120
+ DEBUG [4a5f038f] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708073049 )
+  INFO [4a5f038f] Finished in 0.732 seconds with exit status 0 (successful).
+ DEBUG [acf87a2e] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [acf87a2e] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [acf87a2e] Finished in 0.722 seconds with exit status 0 (successful).
+ DEBUG [923b94a0] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [923b94a0] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [923b94a0] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [923b94a0] Finished in 0.727 seconds with exit status 0 (successful).
+ DEBUG [7bbb5db7] Running if test ! -d /var/www/html/cap-deploy/releases/20190708073049; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708073049'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [7bbb5db7] Command: if test ! -d /var/www/html/cap-deploy/releases/20190708073049; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708073049'" 1>&2; false; fi
+ DEBUG [7bbb5db7] Finished in 0.727 seconds with exit status 0 (successful).
+  INFO [4b1d909d] Running /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION as root@192.99.54.120
+ DEBUG [4b1d909d] Command: cd /var/www/html/cap-deploy/releases/20190708073049 && /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION
+  INFO [4b1d909d] Finished in 0.726 seconds with exit status 0 (successful).
+  INFO [7ba62da0] Running /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708073049 /var/www/html/cap-deploy/releases/current as root@192.99.54.120
+ DEBUG [7ba62da0] Command: /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708073049 /var/www/html/cap-deploy/releases/current
+  INFO [7ba62da0] Finished in 0.725 seconds with exit status 0 (successful).
+  INFO [26f68b01] Running /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy as root@192.99.54.120
+ DEBUG [26f68b01] Command: /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy
+  INFO [26f68b01] Finished in 0.726 seconds with exit status 0 (successful).
+ DEBUG [44c7f9ff] Running /usr/bin/env ls -x /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [44c7f9ff] Command: /usr/bin/env ls -x /var/www/html/cap-deploy/releases
+ DEBUG [44c7f9ff] 	20190708065224	20190708071359	20190708071747	20190708073049
+ DEBUG [44c7f9ff] Finished in 0.727 seconds with exit status 0 (successful).
+ DEBUG [f30770f8] Running if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [f30770f8] Command: if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [f30770f8] Finished in 0.721 seconds with exit status 0 (successful).
+  INFO [daf76185] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708073049 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
+ DEBUG [daf76185] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708073049 by yuvi" >> /var/www/html/cap-deploy/revisions.log
+  INFO [daf76185] Finished in 0.725 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 13:01:22 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4812605c] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [4812605c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4812605c] Finished in 2.448 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [0a89c7c1] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [0a89c7c1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [0a89c7c1] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [4ce31ae9] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [4ce31ae9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [4ce31ae9] 	55fdfa339b6e618fd0bed046057c975c2a26ba13	HEAD
+  INFO [4ce31ae9] Finished in 0.981 seconds with exit status 0 (successful).
+  INFO [9a801883] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [9a801883] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+  INFO [9a801883] Finished in 0.730 seconds with exit status 0 (successful).
+ DEBUG [b83adc01] Running [ -f /var/www/html/cap-deploy/current/REVISION ] as root@192.99.54.120
+ DEBUG [b83adc01] Command: [ -f /var/www/html/cap-deploy/current/REVISION ]
+ DEBUG [b83adc01] Finished in 0.727 seconds with exit status 0 (successful).
+ DEBUG [a692b22f] Running /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null as root@192.99.54.120
+ DEBUG [a692b22f] Command: /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [a692b22f] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [a692b22f] Finished in 0.731 seconds with exit status 0 (successful).
+ DEBUG [82699b74] Running [ -f /var/www/html/cap-deploy/repo/HEAD ] as root@192.99.54.120
+ DEBUG [82699b74] Command: [ -f /var/www/html/cap-deploy/repo/HEAD ]
+ DEBUG [82699b74] Finished in 0.737 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/cap-deploy/repo
+ DEBUG [0c597890] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [0c597890] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [0c597890] Finished in 0.725 seconds with exit status 0 (successful).
+  INFO [c5cb71c0] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [c5cb71c0] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [c5cb71c0] Finished in 0.737 seconds with exit status 0 (successful).
+  INFO [8ca0a1ac] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [8ca0a1ac] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8ca0a1ac] 	Fetching origin
+  INFO [8ca0a1ac] Finished in 0.980 seconds with exit status 0 (successful).
+ DEBUG [710f113a] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [710f113a] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [710f113a] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [ca3d4815] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708073130 as root@192.99.54.120
+ DEBUG [ca3d4815] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708073130 )
+  INFO [ca3d4815] Finished in 0.735 seconds with exit status 0 (successful).
+  INFO [bbf86d9e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708073130 as root@192.99.54.120
+ DEBUG [bbf86d9e] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708073130 )
+  INFO [bbf86d9e] Finished in 0.738 seconds with exit status 0 (successful).
+ DEBUG [87d79ca7] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [87d79ca7] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [87d79ca7] Finished in 0.730 seconds with exit status 0 (successful).
+ DEBUG [4aca373c] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [4aca373c] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [4aca373c] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [4aca373c] Finished in 0.730 seconds with exit status 0 (successful).
+ DEBUG [87dc8760] Running if test ! -d /var/www/html/cap-deploy/releases/20190708073130; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708073130'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [87dc8760] Command: if test ! -d /var/www/html/cap-deploy/releases/20190708073130; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708073130'" 1>&2; false; fi
+ DEBUG [87dc8760] Finished in 0.728 seconds with exit status 0 (successful).
+  INFO [b539403f] Running /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION as root@192.99.54.120
+ DEBUG [b539403f] Command: cd /var/www/html/cap-deploy/releases/20190708073130 && /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION
+  INFO [b539403f] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [7451a227] Running /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708073130 /var/www/html/cap-deploy/releases/current as root@192.99.54.120
+ DEBUG [7451a227] Command: /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708073130 /var/www/html/cap-deploy/releases/current
+  INFO [7451a227] Finished in 0.728 seconds with exit status 0 (successful).
+  INFO [66928769] Running /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy as root@192.99.54.120
+ DEBUG [66928769] Command: /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy
+  INFO [66928769] Finished in 0.741 seconds with exit status 0 (successful).
+ DEBUG [1742bcf4] Running /usr/bin/env ls -x /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [1742bcf4] Command: /usr/bin/env ls -x /var/www/html/cap-deploy/releases
+ DEBUG [1742bcf4] 	20190708065224	20190708071359	20190708071747	20190708073049	20190708073130
+ DEBUG [1742bcf4] Finished in 0.732 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 5 deployed releases on 192.99.54.120
+ DEBUG [caf3aae2] Running [ -d /var/www/html/cap-deploy/current ] as root@192.99.54.120
+ DEBUG [caf3aae2] Command: [ -d /var/www/html/cap-deploy/current ]
+ DEBUG [caf3aae2] Finished in 0.726 seconds with exit status 0 (successful).
+ DEBUG [0c7ceaee] Running /usr/bin/env readlink /var/www/html/cap-deploy/current as root@192.99.54.120
+ DEBUG [0c7ceaee] Command: /usr/bin/env readlink /var/www/html/cap-deploy/current
+ DEBUG [0c7ceaee] 	/var/www/html/cap-deploy/releases/20190708073130
+ DEBUG [0c7ceaee] Finished in 0.732 seconds with exit status 0 (successful).
+  INFO No old releases (keeping newest 5) on 192.99.54.120
+ DEBUG [19ab3484] Running if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [19ab3484] Command: if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [19ab3484] Finished in 0.726 seconds with exit status 0 (successful).
+  INFO [fb563bb5] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708073130 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
+ DEBUG [fb563bb5] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708073130 by yuvi" >> /var/www/html/cap-deploy/revisions.log
+  INFO [fb563bb5] Finished in 0.733 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 13:02:45 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d79cafdd] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [d79cafdd] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d79cafdd] Finished in 2.378 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [57064f4b] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [57064f4b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [57064f4b] Finished in 0.713 seconds with exit status 0 (successful).
+  INFO [8f9596f9] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [8f9596f9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [8f9596f9] 	55fdfa339b6e618fd0bed046057c975c2a26ba13	HEAD
+  INFO [8f9596f9] Finished in 0.965 seconds with exit status 0 (successful).
+  INFO [f4507c08] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [f4507c08] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+  INFO [f4507c08] Finished in 0.712 seconds with exit status 0 (successful).
+ DEBUG [0f98c045] Running [ -f /var/www/html/cap-deploy/current/REVISION ] as root@192.99.54.120
+ DEBUG [0f98c045] Command: [ -f /var/www/html/cap-deploy/current/REVISION ]
+ DEBUG [0f98c045] Finished in 0.712 seconds with exit status 0 (successful).
+ DEBUG [d53eda56] Running /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null as root@192.99.54.120
+ DEBUG [d53eda56] Command: /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [d53eda56] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [d53eda56] Finished in 1.214 seconds with exit status 0 (successful).
+ DEBUG [76dfd10b] Running [ -f /var/www/html/cap-deploy/repo/HEAD ] as root@192.99.54.120
+ DEBUG [76dfd10b] Command: [ -f /var/www/html/cap-deploy/repo/HEAD ]
+ DEBUG [76dfd10b] Finished in 0.740 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/cap-deploy/repo
+ DEBUG [d66ea2cc] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [d66ea2cc] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [d66ea2cc] Finished in 0.709 seconds with exit status 0 (successful).
+  INFO [46363ae9] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [46363ae9] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [46363ae9] Finished in 0.705 seconds with exit status 0 (successful).
+  INFO [501fbf5e] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [501fbf5e] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [501fbf5e] 	Fetching origin
+  INFO [501fbf5e] Finished in 0.978 seconds with exit status 0 (successful).
+ DEBUG [0a18f8bf] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [0a18f8bf] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [0a18f8bf] Finished in 0.707 seconds with exit status 0 (successful).
+  INFO [d2cd8f41] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708073254 as root@192.99.54.120
+ DEBUG [d2cd8f41] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708073254 )
+  INFO [d2cd8f41] Finished in 0.708 seconds with exit status 0 (successful).
+  INFO [a1dd12fb] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708073254 as root@192.99.54.120
+ DEBUG [a1dd12fb] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708073254 )
+  INFO [a1dd12fb] Finished in 0.712 seconds with exit status 0 (successful).
+ DEBUG [1f0d8231] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [1f0d8231] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [1f0d8231] Finished in 0.721 seconds with exit status 0 (successful).
+ DEBUG [912e2413] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [912e2413] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [912e2413] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [912e2413] Finished in 0.712 seconds with exit status 0 (successful).
+ DEBUG [414f0a03] Running if test ! -d /var/www/html/cap-deploy/releases/20190708073254; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708073254'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [414f0a03] Command: if test ! -d /var/www/html/cap-deploy/releases/20190708073254; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708073254'" 1>&2; false; fi
+ DEBUG [414f0a03] Finished in 0.706 seconds with exit status 0 (successful).
+  INFO [39195098] Running /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION as root@192.99.54.120
+ DEBUG [39195098] Command: cd /var/www/html/cap-deploy/releases/20190708073254 && /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION
+  INFO [39195098] Finished in 0.711 seconds with exit status 0 (successful).
+  INFO [e262b6a4] Running /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708073254 /var/www/html/cap-deploy/releases/current as root@192.99.54.120
+ DEBUG [e262b6a4] Command: /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708073254 /var/www/html/cap-deploy/releases/current
+  INFO [e262b6a4] Finished in 0.714 seconds with exit status 0 (successful).
+  INFO [e4afb235] Running /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy as root@192.99.54.120
+ DEBUG [e4afb235] Command: /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy
+  INFO [e4afb235] Finished in 0.710 seconds with exit status 0 (successful).
+ DEBUG [6446f565] Running /usr/bin/env ls -x /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [6446f565] Command: /usr/bin/env ls -x /var/www/html/cap-deploy/releases
+ DEBUG [6446f565] 	20190708065224	20190708071359	20190708071747	20190708073049	20190708073130
+20190708073254
+ DEBUG [6446f565] Finished in 0.710 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 192.99.54.120
+ DEBUG [b311c2f0] Running [ -d /var/www/html/cap-deploy/current ] as root@192.99.54.120
+ DEBUG [b311c2f0] Command: [ -d /var/www/html/cap-deploy/current ]
+ DEBUG [b311c2f0] Finished in 0.717 seconds with exit status 0 (successful).
+ DEBUG [14350f8c] Running /usr/bin/env readlink /var/www/html/cap-deploy/current as root@192.99.54.120
+ DEBUG [14350f8c] Command: /usr/bin/env readlink /var/www/html/cap-deploy/current
+ DEBUG [14350f8c] 	/var/www/html/cap-deploy/releases/20190708073254
+ DEBUG [14350f8c] Finished in 0.710 seconds with exit status 0 (successful).
+  INFO [ea856155] Running /usr/bin/env rm -rf /var/www/html/cap-deploy/releases/20190708065224 as root@192.99.54.120
+ DEBUG [ea856155] Command: /usr/bin/env rm -rf /var/www/html/cap-deploy/releases/20190708065224
+  INFO [ea856155] Finished in 0.717 seconds with exit status 0 (successful).
+ DEBUG [ef759e23] Running if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [ef759e23] Command: if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [ef759e23] Finished in 1.173 seconds with exit status 0 (successful).
+  INFO [afbb7963] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708073254 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
+ DEBUG [afbb7963] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708073254 by yuvi" >> /var/www/html/cap-deploy/revisions.log
+  INFO [afbb7963] Finished in 0.713 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 14:19:47 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [16d9b4db] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [16d9b4db] Command: /usr/bin/env mkdir -p /tmp
+  INFO [16d9b4db] Finished in 4.106 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [3cf4782e] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [3cf4782e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [3cf4782e] Finished in 0.715 seconds with exit status 0 (successful).
+  INFO [db35d1b6] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [db35d1b6] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [db35d1b6] 	55fdfa339b6e618fd0bed046057c975c2a26ba13	HEAD
+  INFO [db35d1b6] Finished in 1.430 seconds with exit status 0 (successful).
+  INFO [36c9ce5b] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [36c9ce5b] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+  INFO [36c9ce5b] Finished in 0.728 seconds with exit status 0 (successful).
+ DEBUG [9cba67cb] Running [ -f /var/www/html/cap-deploy/current/REVISION ] as root@192.99.54.120
+ DEBUG [9cba67cb] Command: [ -f /var/www/html/cap-deploy/current/REVISION ]
+ DEBUG [9cba67cb] Finished in 0.713 seconds with exit status 0 (successful).
+ DEBUG [f37c9332] Running /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null as root@192.99.54.120
+ DEBUG [f37c9332] Command: /usr/bin/env cat /var/www/html/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [f37c9332] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [f37c9332] Finished in 0.715 seconds with exit status 0 (successful).
+ DEBUG [94b263a7] Running [ -f /var/www/html/cap-deploy/repo/HEAD ] as root@192.99.54.120
+ DEBUG [94b263a7] Command: [ -f /var/www/html/cap-deploy/repo/HEAD ]
+ DEBUG [94b263a7] Finished in 0.712 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/cap-deploy/repo
+ DEBUG [73f0a714] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [73f0a714] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [73f0a714] Finished in 0.710 seconds with exit status 0 (successful).
+  INFO [077e3f08] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [077e3f08] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [077e3f08] Finished in 0.727 seconds with exit status 0 (successful).
+  INFO [26cc3443] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [26cc3443] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [26cc3443] 	Fetching origin
+  INFO [26cc3443] Finished in 1.078 seconds with exit status 0 (successful).
+ DEBUG [80f9684c] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [80f9684c] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [80f9684c] Finished in 0.712 seconds with exit status 0 (successful).
+  INFO [869cbb50] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708084957 as root@192.99.54.120
+ DEBUG [869cbb50] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708084957 )
+  INFO [869cbb50] Finished in 2.001 seconds with exit status 0 (successful).
+  INFO [83f86877] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708084957 as root@192.99.54.120
+ DEBUG [83f86877] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708084957 )
+  INFO [83f86877] Finished in 0.791 seconds with exit status 0 (successful).
+ DEBUG [528815c6] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [528815c6] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [528815c6] Finished in 0.708 seconds with exit status 0 (successful).
+ DEBUG [d2728f2b] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [d2728f2b] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d2728f2b] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [d2728f2b] Finished in 0.726 seconds with exit status 0 (successful).
+ DEBUG [dd4e9639] Running if test ! -d /var/www/html/cap-deploy/releases/20190708084957; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708084957'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [dd4e9639] Command: if test ! -d /var/www/html/cap-deploy/releases/20190708084957; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708084957'" 1>&2; false; fi
+ DEBUG [dd4e9639] Finished in 0.708 seconds with exit status 0 (successful).
+  INFO [08d7dd05] Running /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION as root@192.99.54.120
+ DEBUG [08d7dd05] Command: cd /var/www/html/cap-deploy/releases/20190708084957 && /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION
+  INFO [08d7dd05] Finished in 0.717 seconds with exit status 0 (successful).
+  INFO [8d54a3dc] Running /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708084957 /var/www/html/cap-deploy/releases/current as root@192.99.54.120
+ DEBUG [8d54a3dc] Command: /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708084957 /var/www/html/cap-deploy/releases/current
+  INFO [8d54a3dc] Finished in 0.727 seconds with exit status 0 (successful).
+  INFO [b815c718] Running /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy as root@192.99.54.120
+ DEBUG [b815c718] Command: /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy
+  INFO [b815c718] Finished in 0.735 seconds with exit status 0 (successful).
+ DEBUG [530e1968] Running /usr/bin/env ls -x /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [530e1968] Command: /usr/bin/env ls -x /var/www/html/cap-deploy/releases
+ DEBUG [530e1968] 	20190708071359	20190708071747	20190708073049	20190708073130	20190708073254
+20190708084957
+ DEBUG [530e1968] Finished in 0.718 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 192.99.54.120
+ DEBUG [a28cbca3] Running [ -d /var/www/html/cap-deploy/current ] as root@192.99.54.120
+ DEBUG [a28cbca3] Command: [ -d /var/www/html/cap-deploy/current ]
+ DEBUG [a28cbca3] Finished in 0.827 seconds with exit status 0 (successful).
+ DEBUG [4893dcb2] Running /usr/bin/env readlink /var/www/html/cap-deploy/current as root@192.99.54.120
+ DEBUG [4893dcb2] Command: /usr/bin/env readlink /var/www/html/cap-deploy/current
+ DEBUG [4893dcb2] 	/var/www/html/cap-deploy/releases/20190708084957
+ DEBUG [4893dcb2] Finished in 0.835 seconds with exit status 0 (successful).
+  INFO [f30477e2] Running /usr/bin/env rm -rf /var/www/html/cap-deploy/releases/20190708071359 as root@192.99.54.120
+ DEBUG [f30477e2] Command: /usr/bin/env rm -rf /var/www/html/cap-deploy/releases/20190708071359
+  INFO [f30477e2] Finished in 0.833 seconds with exit status 0 (successful).
+ DEBUG [96ba4339] Running if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [96ba4339] Command: if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [96ba4339] Finished in 0.757 seconds with exit status 0 (successful).
+  INFO [81bac44a] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708084957 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
+ DEBUG [81bac44a] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708084957 by yuvi" >> /var/www/html/cap-deploy/revisions.log
+  INFO [81bac44a] Finished in 0.720 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 14:21:46 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9cf478ff] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [9cf478ff] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9cf478ff] Finished in 2.475 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [10b09cea] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [10b09cea] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [10b09cea] Finished in 0.742 seconds with exit status 0 (successful).
+  INFO [e38c15ad] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [e38c15ad] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [e38c15ad] 	55fdfa339b6e618fd0bed046057c975c2a26ba13	HEAD
+  INFO [e38c15ad] Finished in 1.154 seconds with exit status 0 (successful).
+  INFO [b03e8c00] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [b03e8c00] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+  INFO [b03e8c00] Finished in 0.741 seconds with exit status 0 (successful).
+ DEBUG [626fb7bc] Running [ -f /var/www/html/cap-deploy/current/REVISION ] as root@192.99.54.120
+ DEBUG [626fb7bc] Command: [ -f /var/www/html/cap-deploy/current/REVISION ]
+ DEBUG [626fb7bc] Finished in 0.736 seconds with exit status 1 (failed).
+ DEBUG [cbf94815] Running [ -f /var/www/html/cap-deploy/repo/HEAD ] as root@192.99.54.120
+ DEBUG [cbf94815] Command: [ -f /var/www/html/cap-deploy/repo/HEAD ]
+ DEBUG [cbf94815] Finished in 0.733 seconds with exit status 1 (failed).
+ DEBUG [54fc7112] Running if test ! -d /var/www/html/cap-deploy; then echo "Directory does not exist '/var/www/html/cap-deploy'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [54fc7112] Command: if test ! -d /var/www/html/cap-deploy; then echo "Directory does not exist '/var/www/html/cap-deploy'" 1>&2; false; fi
+ DEBUG [54fc7112] Finished in 0.746 seconds with exit status 0 (successful).
+  INFO [af2c344a] Running /usr/bin/env git clone --mirror https://github.com/ywaghmare5203/Cap-php.git /var/www/html/cap-deploy/repo as root@192.99.54.120
+ DEBUG [af2c344a] Command: cd /var/www/html/cap-deploy && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git clone --mirror https://github.com/ywaghmare5203/Cap-php.git /var/www/html/cap-deploy/repo )
+ DEBUG [af2c344a] 	Cloning into bare repository '/var/www/html/cap-deploy/repo'...
+  INFO [af2c344a] Finished in 1.119 seconds with exit status 0 (successful).
+ DEBUG [0da43b51] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [0da43b51] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [0da43b51] Finished in 0.735 seconds with exit status 0 (successful).
+  INFO [ccb43073] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [ccb43073] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [ccb43073] Finished in 0.747 seconds with exit status 0 (successful).
+  INFO [b2ca59a2] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [b2ca59a2] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b2ca59a2] 	Fetching origin
+  INFO [b2ca59a2] Finished in 0.994 seconds with exit status 0 (successful).
+ DEBUG [4015d224] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [4015d224] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [4015d224] Finished in 0.730 seconds with exit status 0 (successful).
+  INFO [a69ddbcb] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708085154 as root@192.99.54.120
+ DEBUG [a69ddbcb] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/cap-deploy/releases/20190708085154 )
+  INFO [a69ddbcb] Finished in 0.744 seconds with exit status 0 (successful).
+  INFO [8e6f73d0] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708085154 as root@192.99.54.120
+ DEBUG [8e6f73d0] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/cap-deploy/releases/20190708085154 )
+  INFO [8e6f73d0] Finished in 0.744 seconds with exit status 0 (successful).
+ DEBUG [dcd40a44] Running if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [dcd40a44] Command: if test ! -d /var/www/html/cap-deploy/repo; then echo "Directory does not exist '/var/www/html/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [dcd40a44] Finished in 0.739 seconds with exit status 0 (successful).
+ DEBUG [53e2eca5] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [53e2eca5] Command: cd /var/www/html/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [53e2eca5] 	55fdfa339b6e618fd0bed046057c975c2a26ba13
+ DEBUG [53e2eca5] Finished in 0.740 seconds with exit status 0 (successful).
+ DEBUG [63b1da36] Running if test ! -d /var/www/html/cap-deploy/releases/20190708085154; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708085154'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [63b1da36] Command: if test ! -d /var/www/html/cap-deploy/releases/20190708085154; then echo "Directory does not exist '/var/www/html/cap-deploy/releases/20190708085154'" 1>&2; false; fi
+ DEBUG [63b1da36] Finished in 0.735 seconds with exit status 0 (successful).
+  INFO [2ca060f8] Running /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION as root@192.99.54.120
+ DEBUG [2ca060f8] Command: cd /var/www/html/cap-deploy/releases/20190708085154 && /usr/bin/env echo "55fdfa339b6e618fd0bed046057c975c2a26ba13" > REVISION
+  INFO [2ca060f8] Finished in 0.752 seconds with exit status 0 (successful).
+  INFO [c52a2165] Running /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708085154 /var/www/html/cap-deploy/releases/current as root@192.99.54.120
+ DEBUG [c52a2165] Command: /usr/bin/env ln -s /var/www/html/cap-deploy/releases/20190708085154 /var/www/html/cap-deploy/releases/current
+  INFO [c52a2165] Finished in 0.736 seconds with exit status 0 (successful).
+  INFO [688afe49] Running /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy as root@192.99.54.120
+ DEBUG [688afe49] Command: /usr/bin/env mv /var/www/html/cap-deploy/releases/current /var/www/html/cap-deploy
+  INFO [688afe49] Finished in 0.739 seconds with exit status 0 (successful).
+ DEBUG [26cb7452] Running /usr/bin/env ls -x /var/www/html/cap-deploy/releases as root@192.99.54.120
+ DEBUG [26cb7452] Command: /usr/bin/env ls -x /var/www/html/cap-deploy/releases
+ DEBUG [26cb7452] 	20190708085154
+ DEBUG [26cb7452] Finished in 0.735 seconds with exit status 0 (successful).
+ DEBUG [21fa55b4] Running if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [21fa55b4] Command: if test ! -d /var/www/html/cap-deploy/releases; then echo "Directory does not exist '/var/www/html/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [21fa55b4] Finished in 0.736 seconds with exit status 0 (successful).
+  INFO [7a6d4500] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708085154 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
+ DEBUG [7a6d4500] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708085154 by yuvi" >> /var/www/html/cap-deploy/revisions.log
+  INFO [7a6d4500] Finished in 0.750 seconds with exit status 0 (successful).
