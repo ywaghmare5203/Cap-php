@@ -4,7 +4,7 @@ lock "~> 3.11.0"
 set :application, "PhpDeploy"
 set :repo_url, "https://github.com/ywaghmare5203/Cap-php.git"
 
-set :deploy_to, '/var/www/html/php-upload' #the deploy directory
+set :deploy_to, '/var/www/html/cap-deploy' #the deploy directory
 set :keep_releases, 5 #The number of directories to be kept in the `releases` directory - this is for the rollback functionality
 #set :linked_dirs, fetch(:linked_dirs, []).push('cache','public/uploads') #directories that are to be shared between releases, mostly cached files or a file upload folder
 #set :linked_files, fetch(:linked_files, []).push('generated-conf/config.php') #files that are to be shared among releases

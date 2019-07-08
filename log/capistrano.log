@@ -88,3 +88,82 @@
   INFO ---------------------------------------------------------------------------
   INFO [b600490d] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
  DEBUG [b600490d] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-07-08 12:17:09 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8bc8ddd8] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [8bc8ddd8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8bc8ddd8] Finished in 2.512 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-yuvi.sh 100.0%
+  INFO [c9bb9568] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh as root@192.99.54.120
+ DEBUG [c9bb9568] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-yuvi.sh
+  INFO [c9bb9568] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [aaf9bb35] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as root@192.99.54.120
+ DEBUG [aaf9bb35] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [aaf9bb35] 	92ade5104c9f46e72352f272d9f9802ca375c447	HEAD
+  INFO [aaf9bb35] Finished in 0.968 seconds with exit status 0 (successful).
+  INFO [0e3c0be7] Running /usr/bin/env mkdir -p /var/www/html/php-upload/shared /var/www/html/php-upload/releases as root@192.99.54.120
+ DEBUG [0e3c0be7] Command: /usr/bin/env mkdir -p /var/www/html/php-upload/shared /var/www/html/php-upload/releases
+  INFO [0e3c0be7] Finished in 0.733 seconds with exit status 0 (successful).
+ DEBUG [93a60215] Running [ -f /var/www/html/php-upload/current/REVISION ] as root@192.99.54.120
+ DEBUG [93a60215] Command: [ -f /var/www/html/php-upload/current/REVISION ]
+ DEBUG [93a60215] Finished in 0.745 seconds with exit status 1 (failed).
+ DEBUG [afdc9bed] Running [ -f /var/www/html/php-upload/repo/HEAD ] as root@192.99.54.120
+ DEBUG [afdc9bed] Command: [ -f /var/www/html/php-upload/repo/HEAD ]
+ DEBUG [afdc9bed] Finished in 0.742 seconds with exit status 1 (failed).
+ DEBUG [b7ccee49] Running if test ! -d /var/www/html/php-upload; then echo "Directory does not exist '/var/www/html/php-upload'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [b7ccee49] Command: if test ! -d /var/www/html/php-upload; then echo "Directory does not exist '/var/www/html/php-upload'" 1>&2; false; fi
+ DEBUG [b7ccee49] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [112e98f2] Running /usr/bin/env git clone --mirror https://github.com/ywaghmare5203/Cap-php.git /var/www/html/php-upload/repo as root@192.99.54.120
+ DEBUG [112e98f2] Command: cd /var/www/html/php-upload && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git clone --mirror https://github.com/ywaghmare5203/Cap-php.git /var/www/html/php-upload/repo )
+ DEBUG [112e98f2] 	Cloning into bare repository '/var/www/html/php-upload/repo'...
+  INFO [112e98f2] Finished in 1.602 seconds with exit status 0 (successful).
+ DEBUG [26f88c52] Running if test ! -d /var/www/html/php-upload/repo; then echo "Directory does not exist '/var/www/html/php-upload/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [26f88c52] Command: if test ! -d /var/www/html/php-upload/repo; then echo "Directory does not exist '/var/www/html/php-upload/repo'" 1>&2; false; fi
+ DEBUG [26f88c52] Finished in 0.731 seconds with exit status 0 (successful).
+  INFO [c1ffb887] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as root@192.99.54.120
+ DEBUG [c1ffb887] Command: cd /var/www/html/php-upload/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [c1ffb887] Finished in 0.737 seconds with exit status 0 (successful).
+  INFO [086c6837] Running /usr/bin/env git remote update --prune as root@192.99.54.120
+ DEBUG [086c6837] Command: cd /var/www/html/php-upload/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [086c6837] 	Fetching origin
+  INFO [086c6837] Finished in 1.040 seconds with exit status 0 (successful).
+ DEBUG [56a56193] Running if test ! -d /var/www/html/php-upload/repo; then echo "Directory does not exist '/var/www/html/php-upload/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [56a56193] Command: if test ! -d /var/www/html/php-upload/repo; then echo "Directory does not exist '/var/www/html/php-upload/repo'" 1>&2; false; fi
+ DEBUG [56a56193] Finished in 0.733 seconds with exit status 0 (successful).
+  INFO [46cad300] Running /usr/bin/env mkdir -p /var/www/html/php-upload/releases/20190708064716 as root@192.99.54.120
+ DEBUG [46cad300] Command: cd /var/www/html/php-upload/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env mkdir -p /var/www/html/php-upload/releases/20190708064716 )
+  INFO [46cad300] Finished in 0.742 seconds with exit status 0 (successful).
+  INFO [b4980a6d] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/php-upload/releases/20190708064716 as root@192.99.54.120
+ DEBUG [b4980a6d] Command: cd /var/www/html/php-upload/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/php-upload/releases/20190708064716 )
+  INFO [b4980a6d] Finished in 0.748 seconds with exit status 0 (successful).
+ DEBUG [e093be86] Running if test ! -d /var/www/html/php-upload/repo; then echo "Directory does not exist '/var/www/html/php-upload/repo'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [e093be86] Command: if test ! -d /var/www/html/php-upload/repo; then echo "Directory does not exist '/var/www/html/php-upload/repo'" 1>&2; false; fi
+ DEBUG [e093be86] Finished in 0.732 seconds with exit status 0 (successful).
+ DEBUG [1f6afe27] Running /usr/bin/env git rev-list --max-count=1 master as root@192.99.54.120
+ DEBUG [1f6afe27] Command: cd /var/www/html/php-upload/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-yuvi.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1f6afe27] 	92ade5104c9f46e72352f272d9f9802ca375c447
+ DEBUG [1f6afe27] Finished in 0.739 seconds with exit status 0 (successful).
+ DEBUG [5df22aae] Running if test ! -d /var/www/html/php-upload/releases/20190708064716; then echo "Directory does not exist '/var/www/html/php-upload/releases/20190708064716'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [5df22aae] Command: if test ! -d /var/www/html/php-upload/releases/20190708064716; then echo "Directory does not exist '/var/www/html/php-upload/releases/20190708064716'" 1>&2; false; fi
+ DEBUG [5df22aae] Finished in 0.729 seconds with exit status 0 (successful).
+  INFO [8dd4658d] Running /usr/bin/env echo "92ade5104c9f46e72352f272d9f9802ca375c447" > REVISION as root@192.99.54.120
+ DEBUG [8dd4658d] Command: cd /var/www/html/php-upload/releases/20190708064716 && /usr/bin/env echo "92ade5104c9f46e72352f272d9f9802ca375c447" > REVISION
+  INFO [8dd4658d] Finished in 0.738 seconds with exit status 0 (successful).
+  INFO [26b358b9] Running /usr/bin/env ln -s /var/www/html/php-upload/releases/20190708064716 /var/www/html/php-upload/releases/current as root@192.99.54.120
+ DEBUG [26b358b9] Command: /usr/bin/env ln -s /var/www/html/php-upload/releases/20190708064716 /var/www/html/php-upload/releases/current
+  INFO [26b358b9] Finished in 0.778 seconds with exit status 0 (successful).
+  INFO [0b97d544] Running /usr/bin/env mv /var/www/html/php-upload/releases/current /var/www/html/php-upload as root@192.99.54.120
+ DEBUG [0b97d544] Command: /usr/bin/env mv /var/www/html/php-upload/releases/current /var/www/html/php-upload
+  INFO [0b97d544] Finished in 0.747 seconds with exit status 0 (successful).
+ DEBUG [082e3bd5] Running /usr/bin/env ls -x /var/www/html/php-upload/releases as root@192.99.54.120
+ DEBUG [082e3bd5] Command: /usr/bin/env ls -x /var/www/html/php-upload/releases
+ DEBUG [082e3bd5] 	20190708064716
+ DEBUG [082e3bd5] Finished in 0.729 seconds with exit status 0 (successful).
+ DEBUG [120e3025] Running if test ! -d /var/www/html/php-upload/releases; then echo "Directory does not exist '/var/www/html/php-upload/releases'" 1>&2; false; fi as root@192.99.54.120
+ DEBUG [120e3025] Command: if test ! -d /var/www/html/php-upload/releases; then echo "Directory does not exist '/var/www/html/php-upload/releases'" 1>&2; false; fi
+ DEBUG [120e3025] Finished in 0.728 seconds with exit status 0 (successful).
+  INFO [6ff89d43] Running /usr/bin/env echo "Branch master (at 92ade5104c9f46e72352f272d9f9802ca375c447) deployed as release 20190708064716 by yuvi" >> /var/www/html/php-upload/revisions.log as root@192.99.54.120
+ DEBUG [6ff89d43] Command: cd /var/www/html/php-upload/releases && /usr/bin/env echo "Branch master (at 92ade5104c9f46e72352f272d9f9802ca375c447) deployed as release 20190708064716 by yuvi" >> /var/www/html/php-upload/revisions.log
+  INFO [6ff89d43] Finished in 0.732 seconds with exit status 0 (successful).
