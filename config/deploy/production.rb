@@ -61,7 +61,7 @@
 #   }
 
 
-role :web, %w{root@192.99.54.120}
+role :web, %w{consagous@192.168.1.162}
 
 # Define roles, user and IP address of deployment server
 # role :name, %{[user]@[IP adde.]}
@@ -71,7 +71,7 @@ role :web, %w{root@192.99.54.120}
 # Example:
 # server '[your droplet's IP addr]', user: '[the deployer user]', roles: %w{[role names as defined above]}
 # server '162.243.74.190', user: 'deployer', roles: %w{app}
-server '192.99.54.120', user: 'root', roles: %w{app}
+server '192.168.1.162', user: 'consagous', roles: %w{app, web}
 
 # SSH Options
 # See the example commented out section in the file
@@ -79,6 +79,6 @@ server '192.99.54.120', user: 'root', roles: %w{app}
 set :ssh_options, {
     forward_agent: false,
     auth_methods: %w(password),
-    password: 'C0n$@g0u5!',
-    user: 'root',
+    password: 'C0n5A30u5#!',
+    user: 'consagous',
 }

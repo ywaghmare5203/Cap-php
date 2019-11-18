@@ -824,3 +824,333 @@
   INFO [7a6d4500] Running /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708085154 by yuvi" >> /var/www/html/cap-deploy/revisions.log as root@192.99.54.120
  DEBUG [7a6d4500] Command: cd /var/www/html/cap-deploy/releases && /usr/bin/env echo "Branch master (at 55fdfa339b6e618fd0bed046057c975c2a26ba13) deployed as release 20190708085154 by yuvi" >> /var/www/html/cap-deploy/revisions.log
   INFO [7a6d4500] Finished in 0.750 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 12:34:25 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [32608cf8] Running /usr/bin/env mkdir -p /tmp as root@192.99.54.120
+ DEBUG [32608cf8] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 12:38:38 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d206d84f] Running /usr/bin/env mkdir -p /tmp as consagous@192.162.1.162
+ DEBUG [d206d84f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 12:43:59 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [41ec6ad2] Running /usr/bin/env mkdir -p /tmp as consagous@192.162.1.162
+ DEBUG [41ec6ad2] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 12:51:20 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c3b287cf] Running /usr/bin/env mkdir -p /tmp as consagous@192.162.1.162
+ DEBUG [c3b287cf] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 12:53:34 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fa512589] Running /usr/bin/env mkdir -p /tmp as consagous@192.162.1.162
+ DEBUG [fa512589] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 12:54:03 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3d528407] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [3d528407] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3d528407] Finished in 4.188 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [e662d140] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [e662d140] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [e662d140] Finished in 1.513 seconds with exit status 0 (successful).
+  INFO [4ebcc71d] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [4ebcc71d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [4ebcc71d] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [4ebcc71d] Finished in 2.824 seconds with exit status 0 (successful).
+  INFO [9ba86792] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [9ba86792] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+ DEBUG [9ba86792] 	mkdir: cannot create directory ‘/var/www/html/cap-deploy’: Permission denied
+ DEBUG [9ba86792] 	mkdir: cannot create directory ‘/var/www/html/cap-deploy’: Permission denied
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:11:20 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3a5e0f11] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [3a5e0f11] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:15:27 +0530 cap production deploy:cheke
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:15:32 +0530 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [b9b5f776] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [b9b5f776] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b9b5f776] Finished in 5.360 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [7b571089] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [7b571089] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [7b571089] Finished in 1.630 seconds with exit status 0 (successful).
+  INFO [e8bd5105] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [e8bd5105] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [e8bd5105] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [e8bd5105] Finished in 2.986 seconds with exit status 0 (successful).
+  INFO [5cab3045] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [5cab3045] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+ DEBUG [5cab3045] 	mkdir: cannot create directory ‘/var/www/html/cap-deploy’: Permission denied
+mkdir: cannot create directory ‘/var/www/html/cap-deploy’: Permission denied
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:24:33 +0530 cap staging deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:24:37 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:26:43 +0530 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [e975a4dd] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [e975a4dd] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:26:49 +0530 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [c583fa12] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [c583fa12] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c583fa12] Finished in 3.024 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [fdab62ab] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [fdab62ab] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [fdab62ab] Finished in 1.661 seconds with exit status 0 (successful).
+  INFO [e17b30d5] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [e17b30d5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [e17b30d5] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [e17b30d5] Finished in 2.886 seconds with exit status 0 (successful).
+  INFO [26249495] Running /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [26249495] Command: /usr/bin/env mkdir -p /var/www/html/cap-deploy/shared /var/www/html/cap-deploy/releases
+ DEBUG [26249495] 	mkdir: cannot create directory ‘/var/www/html/cap-deploy’: Permission denied
+mkdir: cannot create directory ‘/var/www/html/cap-deploy’: Permission denied
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:29:24 +0530 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [0ededb6b] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [0ededb6b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0ededb6b] Finished in 3.432 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [15248908] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [15248908] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [15248908] Finished in 1.569 seconds with exit status 0 (successful).
+  INFO [60b77e46] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [60b77e46] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [60b77e46] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [60b77e46] Finished in 2.863 seconds with exit status 0 (successful).
+  INFO [d36df0a3] Running /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [d36df0a3] Command: /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases
+  INFO [d36df0a3] Finished in 1.973 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:41:06 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c07bf522] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [c07bf522] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c07bf522] Finished in 3.463 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [7bc15996] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [7bc15996] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [7bc15996] Finished in 1.850 seconds with exit status 0 (successful).
+  INFO [07fc6237] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [07fc6237] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [07fc6237] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [07fc6237] Finished in 2.763 seconds with exit status 0 (successful).
+  INFO [758f6599] Running /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [758f6599] Command: /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases
+  INFO [758f6599] Finished in 1.902 seconds with exit status 0 (successful).
+ DEBUG [768a4902] Running [ -f /data/consagous/cap-deploy/current/REVISION ] as consagous@192.168.1.162
+ DEBUG [768a4902] Command: [ -f /data/consagous/cap-deploy/current/REVISION ]
+ DEBUG [768a4902] Finished in 1.874 seconds with exit status 1 (failed).
+ DEBUG [e67014dc] Running [ -f /data/consagous/cap-deploy/repo/HEAD ] as consagous@192.168.1.162
+ DEBUG [e67014dc] Command: [ -f /data/consagous/cap-deploy/repo/HEAD ]
+ DEBUG [e67014dc] Finished in 1.770 seconds with exit status 1 (failed).
+ DEBUG [8a2b3ce9] Running if test ! -d /data/consagous/cap-deploy; then echo "Directory does not exist '/data/consagous/cap-deploy'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [8a2b3ce9] Command: if test ! -d /data/consagous/cap-deploy; then echo "Directory does not exist '/data/consagous/cap-deploy'" 1>&2; false; fi
+ DEBUG [8a2b3ce9] Finished in 1.949 seconds with exit status 0 (successful).
+  INFO [de77c6e7] Running /usr/bin/env git clone --mirror https://github.com/ywaghmare5203/Cap-php.git /data/consagous/cap-deploy/repo as consagous@192.168.1.162
+ DEBUG [de77c6e7] Command: cd /data/consagous/cap-deploy && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git clone --mirror https://github.com/ywaghmare5203/Cap-php.git /data/consagous/cap-deploy/repo )
+ DEBUG [de77c6e7] 	Cloning into bare repository '/data/consagous/cap-deploy/repo'...
+  INFO [de77c6e7] Finished in 4.382 seconds with exit status 0 (successful).
+ DEBUG [f1ef4b21] Running if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [f1ef4b21] Command: if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [f1ef4b21] Finished in 1.735 seconds with exit status 0 (successful).
+  INFO [73e63499] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as consagous@192.168.1.162
+ DEBUG [73e63499] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [73e63499] Finished in 2.057 seconds with exit status 0 (successful).
+  INFO [33be2c72] Running /usr/bin/env git remote update --prune as consagous@192.168.1.162
+ DEBUG [33be2c72] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [33be2c72] 	Fetching origin
+  INFO [33be2c72] Finished in 2.868 seconds with exit status 0 (successful).
+ DEBUG [afdfb98e] Running if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [afdfb98e] Command: if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [afdfb98e] Finished in 1.673 seconds with exit status 0 (successful).
+  INFO [e2193364] Running /usr/bin/env mkdir -p /data/consagous/cap-deploy/releases/20191118081120 as consagous@192.168.1.162
+ DEBUG [e2193364] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env mkdir -p /data/consagous/cap-deploy/releases/20191118081120 )
+  INFO [e2193364] Finished in 1.622 seconds with exit status 0 (successful).
+  INFO [cb0d7c3b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/consagous/cap-deploy/releases/20191118081120 as consagous@192.168.1.162
+ DEBUG [cb0d7c3b] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/consagous/cap-deploy/releases/20191118081120 )
+  INFO [cb0d7c3b] Finished in 1.840 seconds with exit status 0 (successful).
+ DEBUG [5142d065] Running if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [5142d065] Command: if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [5142d065] Finished in 1.304 seconds with exit status 0 (successful).
+ DEBUG [ed25c714] Running /usr/bin/env git rev-list --max-count=1 master as consagous@192.168.1.162
+ DEBUG [ed25c714] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [ed25c714] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf
+ DEBUG [ed25c714] Finished in 1.631 seconds with exit status 0 (successful).
+ DEBUG [0440298f] Running if test ! -d /data/consagous/cap-deploy/releases/20191118081120; then echo "Directory does not exist '/data/consagous/cap-deploy/releases/20191118081120'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [0440298f] Command: if test ! -d /data/consagous/cap-deploy/releases/20191118081120; then echo "Directory does not exist '/data/consagous/cap-deploy/releases/20191118081120'" 1>&2; false; fi
+ DEBUG [0440298f] Finished in 1.558 seconds with exit status 0 (successful).
+  INFO [9801c9ab] Running /usr/bin/env echo "cd0e99aa666cc18ef27c175e93e93fb0304668cf" > REVISION as consagous@192.168.1.162
+ DEBUG [9801c9ab] Command: cd /data/consagous/cap-deploy/releases/20191118081120 && /usr/bin/env echo "cd0e99aa666cc18ef27c175e93e93fb0304668cf" > REVISION
+  INFO [9801c9ab] Finished in 1.975 seconds with exit status 0 (successful).
+  INFO [8740d949] Running /usr/bin/env ln -s /data/consagous/cap-deploy/releases/20191118081120 /data/consagous/cap-deploy/releases/current as consagous@192.168.1.162
+ DEBUG [8740d949] Command: /usr/bin/env ln -s /data/consagous/cap-deploy/releases/20191118081120 /data/consagous/cap-deploy/releases/current
+  INFO [8740d949] Finished in 1.643 seconds with exit status 0 (successful).
+  INFO [27eb75f8] Running /usr/bin/env mv /data/consagous/cap-deploy/releases/current /data/consagous/cap-deploy as consagous@192.168.1.162
+ DEBUG [27eb75f8] Command: /usr/bin/env mv /data/consagous/cap-deploy/releases/current /data/consagous/cap-deploy
+  INFO [27eb75f8] Finished in 1.437 seconds with exit status 0 (successful).
+ DEBUG [dcf4f3ee] Running /usr/bin/env ls -x /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [dcf4f3ee] Command: /usr/bin/env ls -x /data/consagous/cap-deploy/releases
+ DEBUG [dcf4f3ee] 	20191118081120
+ DEBUG [dcf4f3ee] Finished in 1.581 seconds with exit status 0 (successful).
+ DEBUG [ebdd4789] Running if test ! -d /data/consagous/cap-deploy/releases; then echo "Directory does not exist '/data/consagous/cap-deploy/releases'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [ebdd4789] Command: if test ! -d /data/consagous/cap-deploy/releases; then echo "Directory does not exist '/data/consagous/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [ebdd4789] Finished in 1.717 seconds with exit status 0 (successful).
+  INFO [bf08b3a7] Running /usr/bin/env echo "Branch master (at cd0e99aa666cc18ef27c175e93e93fb0304668cf) deployed as release 20191118081120 by consagous" >> /data/consagous/cap-deploy/revisions.log as consagous@192.168.1.162
+ DEBUG [bf08b3a7] Command: cd /data/consagous/cap-deploy/releases && /usr/bin/env echo "Branch master (at cd0e99aa666cc18ef27c175e93e93fb0304668cf) deployed as release 20191118081120 by consagous" >> /data/consagous/cap-deploy/revisions.log
+  INFO [bf08b3a7] Finished in 1.998 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:42:17 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b199ddee] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [b199ddee] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b199ddee] Finished in 3.331 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [cb9d2c9c] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [cb9d2c9c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [cb9d2c9c] Finished in 1.557 seconds with exit status 0 (successful).
+  INFO [6154ca03] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [6154ca03] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [6154ca03] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [6154ca03] Finished in 2.875 seconds with exit status 0 (successful).
+  INFO [c724dc8c] Running /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [c724dc8c] Command: /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases
+  INFO [c724dc8c] Finished in 1.842 seconds with exit status 0 (successful).
+ DEBUG [b8c3f60f] Running [ -f /data/consagous/cap-deploy/current/REVISION ] as consagous@192.168.1.162
+ DEBUG [b8c3f60f] Command: [ -f /data/consagous/cap-deploy/current/REVISION ]
+ DEBUG [b8c3f60f] Finished in 1.929 seconds with exit status 0 (successful).
+ DEBUG [18e40a83] Running /usr/bin/env cat /data/consagous/cap-deploy/current/REVISION 2>/dev/null as consagous@192.168.1.162
+ DEBUG [18e40a83] Command: /usr/bin/env cat /data/consagous/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [18e40a83] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf
+ DEBUG [18e40a83] Finished in 1.519 seconds with exit status 0 (successful).
+ DEBUG [aa22eb12] Running [ -f /data/consagous/cap-deploy/repo/HEAD ] as consagous@192.168.1.162
+ DEBUG [aa22eb12] Command: [ -f /data/consagous/cap-deploy/repo/HEAD ]
+ DEBUG [aa22eb12] Finished in 1.769 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /data/consagous/cap-deploy/repo
+ DEBUG [431d7e42] Running if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [431d7e42] Command: if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [431d7e42] Finished in 1.815 seconds with exit status 0 (successful).
+  INFO [ee4f31bc] Running /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git as consagous@192.168.1.162
+ DEBUG [ee4f31bc] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git remote set-url origin https://github.com/ywaghmare5203/Cap-php.git )
+  INFO [ee4f31bc] Finished in 2.090 seconds with exit status 0 (successful).
+  INFO [628c5ce2] Running /usr/bin/env git remote update --prune as consagous@192.168.1.162
+ DEBUG [628c5ce2] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [628c5ce2] 	Fetching origin
+  INFO [628c5ce2] Finished in 2.303 seconds with exit status 0 (successful).
+ DEBUG [8ec4db70] Running if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [8ec4db70] Command: if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [8ec4db70] Finished in 1.456 seconds with exit status 0 (successful).
+  INFO [8d0ac9c2] Running /usr/bin/env mkdir -p /data/consagous/cap-deploy/releases/20191118081231 as consagous@192.168.1.162
+ DEBUG [8d0ac9c2] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env mkdir -p /data/consagous/cap-deploy/releases/20191118081231 )
+  INFO [8d0ac9c2] Finished in 2.170 seconds with exit status 0 (successful).
+  INFO [cadfab32] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/consagous/cap-deploy/releases/20191118081231 as consagous@192.168.1.162
+ DEBUG [cadfab32] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/consagous/cap-deploy/releases/20191118081231 )
+  INFO [cadfab32] Finished in 2.216 seconds with exit status 0 (successful).
+ DEBUG [195bb558] Running if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [195bb558] Command: if test ! -d /data/consagous/cap-deploy/repo; then echo "Directory does not exist '/data/consagous/cap-deploy/repo'" 1>&2; false; fi
+ DEBUG [195bb558] Finished in 1.599 seconds with exit status 0 (successful).
+ DEBUG [5b0e529d] Running /usr/bin/env git rev-list --max-count=1 master as consagous@192.168.1.162
+ DEBUG [5b0e529d] Command: cd /data/consagous/cap-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5b0e529d] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf
+ DEBUG [5b0e529d] Finished in 2.161 seconds with exit status 0 (successful).
+ DEBUG [fd449798] Running if test ! -d /data/consagous/cap-deploy/releases/20191118081231; then echo "Directory does not exist '/data/consagous/cap-deploy/releases/20191118081231'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [fd449798] Command: if test ! -d /data/consagous/cap-deploy/releases/20191118081231; then echo "Directory does not exist '/data/consagous/cap-deploy/releases/20191118081231'" 1>&2; false; fi
+ DEBUG [fd449798] Finished in 1.564 seconds with exit status 0 (successful).
+  INFO [542061a7] Running /usr/bin/env echo "cd0e99aa666cc18ef27c175e93e93fb0304668cf" > REVISION as consagous@192.168.1.162
+ DEBUG [542061a7] Command: cd /data/consagous/cap-deploy/releases/20191118081231 && /usr/bin/env echo "cd0e99aa666cc18ef27c175e93e93fb0304668cf" > REVISION
+  INFO [542061a7] Finished in 2.083 seconds with exit status 0 (successful).
+  INFO [6f216277] Running /usr/bin/env ln -s /data/consagous/cap-deploy/releases/20191118081231 /data/consagous/cap-deploy/releases/current as consagous@192.168.1.162
+ DEBUG [6f216277] Command: /usr/bin/env ln -s /data/consagous/cap-deploy/releases/20191118081231 /data/consagous/cap-deploy/releases/current
+  INFO [6f216277] Finished in 1.955 seconds with exit status 0 (successful).
+  INFO [d2b61e10] Running /usr/bin/env mv /data/consagous/cap-deploy/releases/current /data/consagous/cap-deploy as consagous@192.168.1.162
+ DEBUG [d2b61e10] Command: /usr/bin/env mv /data/consagous/cap-deploy/releases/current /data/consagous/cap-deploy
+  INFO [d2b61e10] Finished in 1.925 seconds with exit status 0 (successful).
+ DEBUG [c6c03d1e] Running /usr/bin/env ls -x /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [c6c03d1e] Command: /usr/bin/env ls -x /data/consagous/cap-deploy/releases
+ DEBUG [c6c03d1e] 	20191118081120	20191118081231
+ DEBUG [c6c03d1e] Finished in 1.292 seconds with exit status 0 (successful).
+ DEBUG [d2a86297] Running if test ! -d /data/consagous/cap-deploy/releases; then echo "Directory does not exist '/data/consagous/cap-deploy/releases'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [d2a86297] Command: if test ! -d /data/consagous/cap-deploy/releases; then echo "Directory does not exist '/data/consagous/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [d2a86297] Finished in 1.459 seconds with exit status 0 (successful).
+  INFO [1f915194] Running /usr/bin/env echo "Branch master (at cd0e99aa666cc18ef27c175e93e93fb0304668cf) deployed as release 20191118081231 by consagous" >> /data/consagous/cap-deploy/revisions.log as consagous@192.168.1.162
+ DEBUG [1f915194] Command: cd /data/consagous/cap-deploy/releases && /usr/bin/env echo "Branch master (at cd0e99aa666cc18ef27c175e93e93fb0304668cf) deployed as release 20191118081231 by consagous" >> /data/consagous/cap-deploy/revisions.log
+  INFO [1f915194] Finished in 1.539 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-18 13:44:45 +0530 cap production deploy:rollback
+  INFO ---------------------------------------------------------------------------
+  INFO [3a227f48] Running /usr/bin/env mkdir -p /tmp as consagous@192.168.1.162
+ DEBUG [3a227f48] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3a227f48] Finished in 3.058 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-PhpDeploy-production-consagous.sh 100.0%
+  INFO [ed477e2c] Running /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh as consagous@192.168.1.162
+ DEBUG [ed477e2c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-PhpDeploy-production-consagous.sh
+  INFO [ed477e2c] Finished in 1.075 seconds with exit status 0 (successful).
+  INFO [cd73a81d] Running /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD as consagous@192.168.1.162
+ DEBUG [cd73a81d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-PhpDeploy-production-consagous.sh" ; /usr/bin/env git ls-remote https://github.com/ywaghmare5203/Cap-php.git HEAD )
+ DEBUG [cd73a81d] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf	HEAD
+  INFO [cd73a81d] Finished in 2.597 seconds with exit status 0 (successful).
+  INFO [693c4a60] Running /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [693c4a60] Command: /usr/bin/env mkdir -p /data/consagous/cap-deploy/shared /data/consagous/cap-deploy/releases
+  INFO [693c4a60] Finished in 1.657 seconds with exit status 0 (successful).
+ DEBUG [3babcdb1] Running [ -f /data/consagous/cap-deploy/current/REVISION ] as consagous@192.168.1.162
+ DEBUG [3babcdb1] Command: [ -f /data/consagous/cap-deploy/current/REVISION ]
+ DEBUG [3babcdb1] Finished in 1.470 seconds with exit status 0 (successful).
+ DEBUG [d81f21b3] Running /usr/bin/env cat /data/consagous/cap-deploy/current/REVISION 2>/dev/null as consagous@192.168.1.162
+ DEBUG [d81f21b3] Command: /usr/bin/env cat /data/consagous/cap-deploy/current/REVISION 2>/dev/null
+ DEBUG [d81f21b3] 	cd0e99aa666cc18ef27c175e93e93fb0304668cf
+ DEBUG [d81f21b3] Finished in 1.638 seconds with exit status 0 (successful).
+ DEBUG [2f005557] Running /usr/bin/env ls -xt /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [2f005557] Command: /usr/bin/env ls -xt /data/consagous/cap-deploy/releases
+ DEBUG [2f005557] 	20191118081231	20191118081120
+ DEBUG [2f005557] Finished in 1.719 seconds with exit status 0 (successful).
+  INFO [2fcda45c] Running /usr/bin/env ln -s /data/consagous/cap-deploy/releases/20191118081120 /data/consagous/cap-deploy/releases/current as consagous@192.168.1.162
+ DEBUG [2fcda45c] Command: /usr/bin/env ln -s /data/consagous/cap-deploy/releases/20191118081120 /data/consagous/cap-deploy/releases/current
+  INFO [2fcda45c] Finished in 1.807 seconds with exit status 0 (successful).
+  INFO [5e98f1eb] Running /usr/bin/env mv /data/consagous/cap-deploy/releases/current /data/consagous/cap-deploy as consagous@192.168.1.162
+ DEBUG [5e98f1eb] Command: /usr/bin/env mv /data/consagous/cap-deploy/releases/current /data/consagous/cap-deploy
+  INFO [5e98f1eb] Finished in 1.664 seconds with exit status 0 (successful).
+ DEBUG [29f89dcd] Running /usr/bin/env ls -xt /data/consagous/cap-deploy/releases as consagous@192.168.1.162
+ DEBUG [29f89dcd] Command: /usr/bin/env ls -xt /data/consagous/cap-deploy/releases
+ DEBUG [29f89dcd] 	20191118081231	20191118081120
+ DEBUG [29f89dcd] Finished in 1.899 seconds with exit status 0 (successful).
+ DEBUG [53e24e32] Running [ `readlink /data/consagous/cap-deploy/current` != /data/consagous/cap-deploy/releases/20191118081231 ] as consagous@192.168.1.162
+ DEBUG [53e24e32] Command: [ `readlink /data/consagous/cap-deploy/current` != /data/consagous/cap-deploy/releases/20191118081231 ]
+ DEBUG [53e24e32] Finished in 1.887 seconds with exit status 0 (successful).
+  INFO [4a816ff2] Running /usr/bin/env tar -czf /data/consagous/cap-deploy/rolled-back-release-20191118081231.tar.gz /data/consagous/cap-deploy/releases/20191118081231 as consagous@192.168.1.162
+ DEBUG [4a816ff2] Command: /usr/bin/env tar -czf /data/consagous/cap-deploy/rolled-back-release-20191118081231.tar.gz /data/consagous/cap-deploy/releases/20191118081231
+ DEBUG [4a816ff2] 	tar: Removing leading `/' from member names
+  INFO [4a816ff2] Finished in 1.918 seconds with exit status 0 (successful).
+  INFO [bc3bb922] Running /usr/bin/env rm -rf /data/consagous/cap-deploy/releases/20191118081231 as consagous@192.168.1.162
+ DEBUG [bc3bb922] Command: /usr/bin/env rm -rf /data/consagous/cap-deploy/releases/20191118081231
+  INFO [bc3bb922] Finished in 1.855 seconds with exit status 0 (successful).
+ DEBUG [5490bc66] Running if test ! -d /data/consagous/cap-deploy/releases; then echo "Directory does not exist '/data/consagous/cap-deploy/releases'" 1>&2; false; fi as consagous@192.168.1.162
+ DEBUG [5490bc66] Command: if test ! -d /data/consagous/cap-deploy/releases; then echo "Directory does not exist '/data/consagous/cap-deploy/releases'" 1>&2; false; fi
+ DEBUG [5490bc66] Finished in 1.958 seconds with exit status 0 (successful).
+  INFO [06ecacbd] Running /usr/bin/env echo "consagous rolled back to release 20191118081120" >> /data/consagous/cap-deploy/revisions.log as consagous@192.168.1.162
+ DEBUG [06ecacbd] Command: cd /data/consagous/cap-deploy/releases && /usr/bin/env echo "consagous rolled back to release 20191118081120" >> /data/consagous/cap-deploy/revisions.log
+  INFO [06ecacbd] Finished in 2.028 seconds with exit status 0 (successful).
